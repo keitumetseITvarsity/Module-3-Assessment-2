@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+:root {
+ --brown: #A47E3B;
+ --white: #fff;
+ --black: #000;
+ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+}
+
+.logo {
+    
+    margin-top: -70px;
+    height: 22rem;
+    width: 18rem;
+}
+
+.heading {
+    display: inline-flex;
+    flex-direction: column ;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    background-color: var(--brown);
+    padding: auto;
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.7);
+    color: var(--white);
+    z-index: 999;
+}
+
+.heaad {
+    position: relative;
+}
+
+
+.heading h1 {
+    padding-top: 15px;
+    flex-direction: column;
+    color: var(--white);
+}
+.eich1 {
+    color: var(--brown);
+}
+
+.menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 10rem;
+    
+}
+
+.meal {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+
+
+:is(.meals-menu, .drinks-menu, .desert-menu) {
+    
+    width: 120px;
+    height: auto;
+    padding: 25px;
+    margin: 15px;
+    background-color: var(--brown);
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.7);
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.main {
+    
+    background: linear-gradient(rgba(97, 72, 28, 0.5), rgba(97, 72, 28, 0.5)),url('images/chad-montano-MqT0asuoIcU-unsplash-min.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    
+}
+
+
+
+.meal {
+    background: linear-gradient(rgba(164, 126, 59,.5),rgba(164, 126, 59,.5)), url('images/lukas-blazek-f-TWhXOrLiU-unsplash-min.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    margin-top: -9.4rem;
+    padding-bottom: 5rem;
+}
+
+/*********** Card styling ******************/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 15px 5px;
+    background-color: var(--white);
+}
+
+
+.picture {
+    border-radius: 5px 5px 0 0;
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    object-position: 80% 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+/************* Alcohol Card ***************/
+.alcohol {
+    width: 450px;
+    height: 300px;
+
+}
+/********** Big Card for each item ********/
+.big-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 15px 5px 5rem 5px;
+    background-color: var(--white);
+    color: var(--brown);
+}
+
+.card-image {
+    display: block;
+    width: 50vw;
+    max-width: auto;
+    border-radius: 5px 5px 0 0;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
+/*---------------- Meals items -------------------------------*/
+
+/*********** Pricing Table *****************/
+:is(.pricing, td, th) {
+    height: auto;
+    width: auto;
+    border: 2px solid var(--brown);
+    border-collapse: collapse;
+    padding: 12px;
+}
+
+.pricing {
+    margin-top: 25px;
+}
+
+/*********** Additions *******************/
+.additions {
+    margin: 20px 0;
+}
+
+/********** Form Area *******************/
+.form-area {
+    margin: 20px 0;
+}
+
+#paragraph {
+    font-size: 18px;
+    
+    border: 2px solid var(--brown);
+    color: var(--brown);
+    border-radius: 3px;
+}
+
+.additions h3 {
+    margin: 12px 0;
+    text-transform: uppercase;
+}
+
+.list-add li {
+    list-style-type: square;
+}
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 35px;
+    margin: 12px 0 0 3rem;
+    
+    border-radius: 3px;
+    color: var(--white);
+    background-color: var(--brown);
+}
+
+.order-btn:hover {
+    transition: 0.3s;
+    box-shadow: 0 6px 12px 0 rgba(164, 126, 59,.6);
+}
+
+.home-btn {
+    width: 35vw;
+    margin: 0;
+    
+}
+
+/************ Footer Stylying *********************/
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: var(--brown);
+    border: none;
+    color: var(--white);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    float: left;
+    height: 45px;
+    width: 100%;
+    box-shadow: 6px 6px 12px 12px rgba(0, 0, 0, 0.7);
+    
+}
+
+.footer a {
+    background-color: var(--brown);
+    padding: 15px 25px;
+    height: 45px;
+    
+}
+
+.footer i {
+    color: var(--white);
+    margin: 0 5rem 10px 5rem;
+}
+
+.footer i:hover, .footer a:hover{
+    color: var(--brown);
+    background-color: rgba(218, 172, 94, 0.9);
+}
+
+ 
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .card:hover .picture {
+    opacity: 0.6;
+  }
+  
+  .card:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 16px 32px;
+    border-radius: 3px;
+    font-family: 'EB Garamond', serif;
+  }
+
+  .salad {
+    left: 42rem;
+  }
+
+  .burger {
+    left: 82%;
+  }
+
+  .steak {
+    top: 45rem;
+    left: 15rem;
+  }
+
+  .pizza {
+    top: 45rem;
+    left: 42rem;
+  }
+
+  .chaofer {
+    top: 45rem;
+    left: 82%;
+  }
+
+.margina {
+    margin: 2rem;
+}
+
+.table-image {
+    width: 6rem;
+    height: 20vh;
+}
+
+.order-item {
+    width: 8rem;
+    margin-left: 1px;
+}
+
+.container h4, .container p {
+    color: var(--brown);
+    text-align: center;
+}
+
+.container h4 {
+    margin: 0 10rem;
+}
+.container p {
+    margin: 0 10rem 10px;
+}
+
+/*********************************** MEDIA QUERIES ******************/
+
+/*********** Makes the columns jump to the second 
+line if there's no room for an item ********/
+@media  screen and (max-width:990px) {
+    .meal:nth-of-type(2) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
