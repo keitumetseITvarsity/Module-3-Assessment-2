@@ -1,5 +1,5 @@
 # Module-3-Assessment-2
 
-## MY RECIPE BOOK APP
+## RESTAURANT APP - CIBO GUSTOSO
 
 -Learnt about media queries and sceen sizes then demonstrated my knowlegde here
